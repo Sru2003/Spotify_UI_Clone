@@ -7,14 +7,24 @@ class Search extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(children:[
       AppBar(
-      title: Text('Search',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 29,color: Colors.white)),
+        backgroundColor: Colors.transparent,
+        elevation: 0.0,
+        title: Text('Search',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 29,color: Colors.white)),
     ),
-       TextField(
-          decoration:InputDecoration(
-            labelText:'What do you want to listen to?',
-            icon: Icon(Icons.search),
-          )
-        ),
+       Padding(
+         padding: const EdgeInsets.all(11.0),
+
+         child: TextField(
+
+            decoration:InputDecoration(
+              hintText:'What do you want to listen to?',
+              prefixIcon: Icon(Icons.search,),
+              prefixIconColor: Colors.grey,
+              filled: true,
+              fillColor: Colors.white,
+            )
+          ),
+       ),
 
     ]
     );

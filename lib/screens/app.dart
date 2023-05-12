@@ -18,7 +18,7 @@ class _MyAppState extends State<MyApp> {
   AudioPlayer _audioPlayer=new AudioPlayer();
   var Tabs = [];
   int currentTabIndex = 0;
-  bool isPlaying=false;
+  bool isPlaying=true;
   Music? music;
 
   Widget miniPlayer(Music? music,{bool stop=false}) {
